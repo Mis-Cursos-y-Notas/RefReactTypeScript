@@ -3,8 +3,7 @@ import { UserRow } from './UserRow';
 
 export const UsersPage = () => {
 
-  const { users } = useUsers();
-  // const { users, nextPage, prevPage } = useUsers();
+  const { users, nextPage, prevPage } = useUsers();
 
   console.log(users);
 
@@ -20,21 +19,21 @@ export const UsersPage = () => {
         </thead>
 
         <tbody>
-          {/* {users.map((user) => (
+          {users.map((user) => (
             <UserRow key={user.id} user={user} />
-          ))} */}
+          ))}
         </tbody>
       </table>
 
       <div className="flex justify-between w-[500px] mt-2">
         <button
-          // onClick={prevPage}
+          onClick={prevPage}
           className="p-2 bg-blue-500 text-white rounded-[5px]"
         >
           Anterior
         </button>
         <button
-          // onClick={nextPage}
+          onClick={nextPage}
           className="p-2 bg-blue-500 text-white rounded-[5px]"
         >
           Siguiente
