@@ -204,3 +204,8 @@ has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header
 
 ---
 
+para la parte de formularios se instaló 
+
+https://react-hook-form.com/
+
+esto es importante a tener en cuenta porque esto ya hace varias cosas en los formularios de React
