@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import type { User } from '../interfaces/reqres.response';
 import { loadUsersAction } from '../actions/load-users.action';
-import { useRef as reactUseRef } from 'react';
+
 
 export const useUsers = () => {
   const [users, setUsers] = useState<User[]>([]);

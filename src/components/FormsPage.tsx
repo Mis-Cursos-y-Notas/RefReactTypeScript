@@ -8,7 +8,7 @@ type FormInputs = {
 export const FormsPage = () => {
   const { register, handleSubmit } = useForm<FormInputs>({
     defaultValues: {
-      email: 'fernando@google.com',
+      email: 'jcesarforero@google.com',
       password: '123456',
     },
   });
@@ -19,12 +19,12 @@ export const FormsPage = () => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <h3>Formularios</h3>
+      <h3>Mi Formulario</h3>
 
       <div className="flex flex-col space-y-2 w-[500px]">
         <input
           type="email"
-          placeholder="email"
+          placeholder="Ingresa un email valido"
           className="border border-gray-300 p-2 rounded-xl"
           {...register('email', { required: true })}
         />
@@ -36,7 +36,7 @@ export const FormsPage = () => {
           {...register('password', { required: true })}
         />
 
-        <button type="submit" className="bg-blue-500 text-white p-2 rounded-xl">
+        <button type="submit" className="bg-blue-500 text-white p-2 rounded-xl hover:bg-blue-700">
           Ingresar
         </button>
       </div>
